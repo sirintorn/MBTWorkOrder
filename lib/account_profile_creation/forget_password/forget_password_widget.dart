@@ -67,6 +67,8 @@ class _ForgetPasswordWidgetState extends State<ForgetPasswordWidget>
 
     _model.emailAddressController ??= TextEditingController();
     _model.emailAddressFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -132,11 +134,13 @@ class _ForgetPasswordWidgetState extends State<ForgetPasswordWidget>
                           size: 44.0,
                         ),
                         Text(
-                          'User Management',
+                          FFLocalizations.of(context).getText(
+                            '24xra3pv' /* User Management */,
+                          ),
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: 'Outfit',
+                                fontFamily: 'Readex Pro',
                                 color: FlutterFlowTheme.of(context).info,
                                 fontSize: 30.0,
                                 fontWeight: FontWeight.w600,
@@ -201,7 +205,9 @@ class _ForgetPasswordWidgetState extends State<ForgetPasswordWidget>
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 12.0, 0.0, 0.0),
                               child: Text(
-                                'Forgot Password',
+                                FFLocalizations.of(context).getText(
+                                  '1miqdxt5' /* Forgot Password */,
+                                ),
                                 textAlign: TextAlign.center,
                                 style:
                                     FlutterFlowTheme.of(context).displaySmall,
@@ -211,7 +217,9 @@ class _ForgetPasswordWidgetState extends State<ForgetPasswordWidget>
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 8.0, 0.0, 24.0),
                               child: Text(
-                                'Please fill out your email belo in order to recieve a reset password link.',
+                                FFLocalizations.of(context).getText(
+                                  '9hsotx3a' /* Please fill out your email bel... */,
+                                ),
                                 textAlign: TextAlign.start,
                                 style: FlutterFlowTheme.of(context).labelLarge,
                               ),
@@ -228,7 +236,10 @@ class _ForgetPasswordWidgetState extends State<ForgetPasswordWidget>
                                   autofillHints: const [AutofillHints.email],
                                   obscureText: false,
                                   decoration: InputDecoration(
-                                    labelText: 'Email',
+                                    labelText:
+                                        FFLocalizations.of(context).getText(
+                                      'kbj5vjo2' /* Email */,
+                                    ),
                                     labelStyle:
                                         FlutterFlowTheme.of(context).labelLarge,
                                     enabledBorder: OutlineInputBorder(
@@ -298,7 +309,9 @@ class _ForgetPasswordWidgetState extends State<ForgetPasswordWidget>
                                     context: context,
                                   );
                                 },
-                                text: 'Send Reset Link',
+                                text: FFLocalizations.of(context).getText(
+                                  'fwgwjlgl' /* Send Reset Link */,
+                                ),
                                 options: FFButtonOptions(
                                   width: double.infinity,
                                   height: 44.0,
@@ -310,7 +323,7 @@ class _ForgetPasswordWidgetState extends State<ForgetPasswordWidget>
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Readex Pro',
+                                        fontFamily: 'Inter',
                                         color: Colors.white,
                                       ),
                                   elevation: 3.0,

@@ -69,6 +69,8 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
 
     _model.passwordController ??= TextEditingController();
     _model.passwordFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -139,11 +141,13 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                               size: 44.0,
                             ),
                             Text(
-                              'User Management',
+                              FFLocalizations.of(context).getText(
+                                'iq5op30d' /* User Management */,
+                              ),
                               style: FlutterFlowTheme.of(context)
                                   .displaySmall
                                   .override(
-                                    fontFamily: 'Outfit',
+                                    fontFamily: 'Readex Pro',
                                     color: FlutterFlowTheme.of(context).info,
                                     fontSize: 30.0,
                                     fontWeight: FontWeight.w600,
@@ -183,7 +187,9 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Create User',
+                                  FFLocalizations.of(context).getText(
+                                    't729ftiu' /* Create User */,
+                                  ),
                                   textAlign: TextAlign.center,
                                   style:
                                       FlutterFlowTheme.of(context).displaySmall,
@@ -210,7 +216,10 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                                       autofillHints: const [AutofillHints.email],
                                       obscureText: false,
                                       decoration: InputDecoration(
-                                        labelText: 'Email',
+                                        labelText:
+                                            FFLocalizations.of(context).getText(
+                                          'fap7sbbf' /* Email */,
+                                        ),
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .labelLarge,
                                         enabledBorder: OutlineInputBorder(
@@ -276,7 +285,10 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                                       autofillHints: const [AutofillHints.password],
                                       obscureText: !_model.passwordVisibility,
                                       decoration: InputDecoration(
-                                        labelText: 'Password',
+                                        labelText:
+                                            FFLocalizations.of(context).getText(
+                                          'dfe6k4zv' /* Password */,
+                                        ),
                                         labelStyle: FlutterFlowTheme.of(context)
                                             .labelLarge,
                                         enabledBorder: OutlineInputBorder(
@@ -365,7 +377,9 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                                       context.goNamedAuth(
                                           'createProfile', context.mounted);
                                     },
-                                    text: 'Create Account',
+                                    text: FFLocalizations.of(context).getText(
+                                      'spd59n4v' /* Create Account */,
+                                    ),
                                     options: FFButtonOptions(
                                       width: double.infinity,
                                       height: 44.0,
@@ -379,7 +393,7 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Readex Pro',
+                                            fontFamily: 'Inter',
                                             color: Colors.white,
                                           ),
                                       elevation: 3.0,
@@ -397,7 +411,9 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 24.0),
                                     child: Text(
-                                      'Or sign up with',
+                                      FFLocalizations.of(context).getText(
+                                        'kx4hvwwv' /* Or sign up with */,
+                                      ),
                                       textAlign: TextAlign.center,
                                       style: FlutterFlowTheme.of(context)
                                           .labelLarge,
@@ -435,17 +451,23 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                                             .textScaleFactor,
                                         text: TextSpan(
                                           children: [
-                                            const TextSpan(
-                                              text: 'Already have an account? ',
-                                              style: TextStyle(),
+                                            TextSpan(
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'lt9dw3mx' /* Already have an account?  */,
+                                              ),
+                                              style: const TextStyle(),
                                             ),
                                             TextSpan(
-                                              text: 'Sign in here',
+                                              text: FFLocalizations.of(context)
+                                                  .getText(
+                                                'f27eiu0s' /* Sign in here */,
+                                              ),
                                               style: FlutterFlowTheme.of(
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Readex Pro',
+                                                    fontFamily: 'Inter',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .primary,

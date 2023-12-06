@@ -1,5 +1,4 @@
 import '/auth/firebase_auth/auth_util.dart';
-import '/backend/backend.dart';
 import '/backend/firebase_storage/storage.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -49,9 +48,14 @@ class _EditProfileComponentWidgetState
         TextEditingController(text: currentUserDisplayName);
     _model.yourNameFocusNode ??= FocusNode();
 
-    _model.myBioController ??= TextEditingController(
-        text: valueOrDefault(currentUserDocument?.shortDescription, ''));
+    _model.myBioController ??= TextEditingController();
     _model.myBioFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {
+          _model.myBioController?.text = FFLocalizations.of(context).getText(
+            '06doruz3' /* [bio] */,
+          );
+        }));
   }
 
   @override
@@ -80,7 +84,9 @@ class _EditProfileComponentWidgetState
           Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(24.0, 8.0, 0.0, 0.0),
             child: Text(
-              'Adjust the content below to update your profile.',
+              FFLocalizations.of(context).getText(
+                'n0cn9xwu' /* Adjust the content below to up... */,
+              ),
               style: FlutterFlowTheme.of(context).labelLarge,
             ),
           ),
@@ -106,20 +112,18 @@ class _EditProfileComponentWidgetState
                       Padding(
                         padding:
                             const EdgeInsetsDirectional.fromSTEB(4.0, 4.0, 4.0, 4.0),
-                        child: AuthUserStreamWidget(
-                          builder: (context) => ClipRRect(
-                            borderRadius: BorderRadius.circular(60.0),
-                            child: CachedNetworkImage(
-                              fadeInDuration: const Duration(milliseconds: 200),
-                              fadeOutDuration: const Duration(milliseconds: 200),
-                              imageUrl: valueOrDefault<String>(
-                                currentUserPhoto,
-                                'https://images.unsplash.com/photo-1499887142886-791eca5918cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxN3x8dXNlcnxlbnwwfHx8fDE2OTc4MjQ2MjZ8MA&ixlib=rb-4.0.3&q=80&w=400',
-                              ),
-                              width: 300.0,
-                              height: 200.0,
-                              fit: BoxFit.cover,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(60.0),
+                          child: CachedNetworkImage(
+                            fadeInDuration: const Duration(milliseconds: 200),
+                            fadeOutDuration: const Duration(milliseconds: 200),
+                            imageUrl: valueOrDefault<String>(
+                              currentUserPhoto,
+                              'https://images.unsplash.com/photo-1499887142886-791eca5918cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxN3x8dXNlcnxlbnwwfHx8fDE2OTc4MjQ2MjZ8MA&ixlib=rb-4.0.3&q=80&w=400',
                             ),
+                            width: 300.0,
+                            height: 200.0,
+                            fit: BoxFit.cover,
                           ),
                         ),
                       ),
@@ -203,7 +207,9 @@ class _EditProfileComponentWidgetState
                     }
                   }
                 },
-                text: 'Change Photo',
+                text: FFLocalizations.of(context).getText(
+                  'h2n552zz' /* Change Photo */,
+                ),
                 options: FFButtonOptions(
                   width: 130.0,
                   height: 40.0,
@@ -224,156 +230,167 @@ class _EditProfileComponentWidgetState
           ),
           Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 12.0),
-            child: AuthUserStreamWidget(
-              builder: (context) => TextFormField(
-                controller: _model.yourNameController,
-                focusNode: _model.yourNameFocusNode,
-                autofillHints: const [AutofillHints.name],
-                textCapitalization: TextCapitalization.words,
-                obscureText: false,
-                decoration: InputDecoration(
-                  labelText: 'Full Name',
-                  labelStyle: FlutterFlowTheme.of(context).labelMedium,
-                  hintText: 'Your full name...',
-                  hintStyle: FlutterFlowTheme.of(context).labelMedium,
-                  errorStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Readex Pro',
-                        color: FlutterFlowTheme.of(context).error,
-                      ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: FlutterFlowTheme.of(context).alternate,
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: FlutterFlowTheme.of(context).primary,
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  errorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
+            child: TextFormField(
+              controller: _model.yourNameController,
+              focusNode: _model.yourNameFocusNode,
+              autofillHints: const [AutofillHints.name],
+              textCapitalization: TextCapitalization.words,
+              obscureText: false,
+              decoration: InputDecoration(
+                labelText: FFLocalizations.of(context).getText(
+                  'rvfkzlbh' /* Full Name */,
+                ),
+                labelStyle: FlutterFlowTheme.of(context).labelMedium,
+                hintText: FFLocalizations.of(context).getText(
+                  '00h6ly0n' /* Your full name... */,
+                ),
+                hintStyle: FlutterFlowTheme.of(context).labelMedium,
+                errorStyle: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Inter',
                       color: FlutterFlowTheme.of(context).error,
-                      width: 2.0,
                     ),
-                    borderRadius: BorderRadius.circular(8.0),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: FlutterFlowTheme.of(context).alternate,
+                    width: 2.0,
                   ),
-                  focusedErrorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: FlutterFlowTheme.of(context).error,
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: FlutterFlowTheme.of(context).primary,
+                    width: 2.0,
                   ),
-                  filled: true,
-                  fillColor: FlutterFlowTheme.of(context).primaryBackground,
-                  contentPadding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 12.0),
+                  borderRadius: BorderRadius.circular(8.0),
                 ),
-                style: FlutterFlowTheme.of(context).bodyMedium,
-                cursorColor: FlutterFlowTheme.of(context).primary,
-                validator:
-                    _model.yourNameControllerValidator.asValidator(context),
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 12.0),
-            child: AuthUserStreamWidget(
-              builder: (context) => FlutterFlowDropDown<String>(
-                controller: _model.dropDownValueController ??=
-                    FormFieldController<String>(
-                  _model.dropDownValue ??=
-                      valueOrDefault(currentUserDocument?.role, ''),
+                errorBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: FlutterFlowTheme.of(context).error,
+                    width: 2.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
                 ),
-                options: const [
-                  'Owner/Founder',
-                  'Director',
-                  'Manager',
-                  'Mid-Manager',
-                  'Employee'
-                ],
-                onChanged: (val) => setState(() => _model.dropDownValue = val),
-                width: double.infinity,
-                height: 44.0,
-                textStyle: FlutterFlowTheme.of(context).bodyMedium,
-                hintText: 'Your Role',
-                icon: Icon(
-                  Icons.keyboard_arrow_down_rounded,
-                  color: FlutterFlowTheme.of(context).secondaryText,
-                  size: 24.0,
+                focusedErrorBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: FlutterFlowTheme.of(context).error,
+                    width: 2.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
                 ),
+                filled: true,
                 fillColor: FlutterFlowTheme.of(context).primaryBackground,
-                elevation: 2.0,
-                borderColor: FlutterFlowTheme.of(context).alternate,
-                borderWidth: 2.0,
-                borderRadius: 8.0,
-                margin: const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 4.0),
-                hidesUnderline: true,
-                isSearchable: false,
-                isMultiSelect: false,
+                contentPadding:
+                    const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 12.0),
               ),
+              style: FlutterFlowTheme.of(context).bodyMedium,
+              cursorColor: FlutterFlowTheme.of(context).primary,
+              validator:
+                  _model.yourNameControllerValidator.asValidator(context),
             ),
           ),
           Padding(
             padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 12.0),
-            child: AuthUserStreamWidget(
-              builder: (context) => TextFormField(
-                controller: _model.myBioController,
-                focusNode: _model.myBioFocusNode,
-                textCapitalization: TextCapitalization.sentences,
-                obscureText: false,
-                decoration: InputDecoration(
-                  labelText: 'Short Description',
-                  labelStyle: FlutterFlowTheme.of(context).labelMedium,
-                  hintText: 'A little about you...',
-                  hintStyle: FlutterFlowTheme.of(context).labelMedium,
-                  errorStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                        fontFamily: 'Readex Pro',
-                        color: FlutterFlowTheme.of(context).error,
-                      ),
-                  enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: FlutterFlowTheme.of(context).alternate,
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: FlutterFlowTheme.of(context).primary,
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  errorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: FlutterFlowTheme.of(context).error,
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  focusedErrorBorder: OutlineInputBorder(
-                    borderSide: BorderSide(
-                      color: FlutterFlowTheme.of(context).error,
-                      width: 2.0,
-                    ),
-                    borderRadius: BorderRadius.circular(8.0),
-                  ),
-                  filled: true,
-                  fillColor: FlutterFlowTheme.of(context).primaryBackground,
-                  contentPadding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 12.0),
+            child: FlutterFlowDropDown<String>(
+              controller: _model.dropDownValueController ??=
+                  FormFieldController<String>(null),
+              options: [
+                FFLocalizations.of(context).getText(
+                  '0udbssa2' /* Owner/Founder */,
                 ),
-                style: FlutterFlowTheme.of(context).bodyMedium,
-                textAlign: TextAlign.start,
-                maxLines: 3,
-                cursorColor: FlutterFlowTheme.of(context).primary,
-                validator: _model.myBioControllerValidator.asValidator(context),
+                FFLocalizations.of(context).getText(
+                  'v5lf9ofy' /* Director */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'qqco0l3y' /* Manager */,
+                ),
+                FFLocalizations.of(context).getText(
+                  '6dovn15g' /* Mid-Manager */,
+                ),
+                FFLocalizations.of(context).getText(
+                  'hi6brjsu' /* Employee */,
+                )
+              ],
+              onChanged: (val) => setState(() => _model.dropDownValue = val),
+              width: double.infinity,
+              height: 44.0,
+              textStyle: FlutterFlowTheme.of(context).bodyMedium,
+              hintText: FFLocalizations.of(context).getText(
+                'upuv6hrs' /* Your Role */,
               ),
+              icon: Icon(
+                Icons.keyboard_arrow_down_rounded,
+                color: FlutterFlowTheme.of(context).secondaryText,
+                size: 24.0,
+              ),
+              fillColor: FlutterFlowTheme.of(context).primaryBackground,
+              elevation: 2.0,
+              borderColor: FlutterFlowTheme.of(context).alternate,
+              borderWidth: 2.0,
+              borderRadius: 8.0,
+              margin: const EdgeInsetsDirectional.fromSTEB(16.0, 4.0, 16.0, 4.0),
+              hidesUnderline: true,
+              isSearchable: false,
+              isMultiSelect: false,
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 12.0),
+            child: TextFormField(
+              controller: _model.myBioController,
+              focusNode: _model.myBioFocusNode,
+              textCapitalization: TextCapitalization.sentences,
+              obscureText: false,
+              decoration: InputDecoration(
+                labelText: FFLocalizations.of(context).getText(
+                  '2fc0gzon' /* Short Description */,
+                ),
+                labelStyle: FlutterFlowTheme.of(context).labelMedium,
+                hintText: FFLocalizations.of(context).getText(
+                  '324h9azf' /* A little about you... */,
+                ),
+                hintStyle: FlutterFlowTheme.of(context).labelMedium,
+                errorStyle: FlutterFlowTheme.of(context).bodyMedium.override(
+                      fontFamily: 'Inter',
+                      color: FlutterFlowTheme.of(context).error,
+                    ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: FlutterFlowTheme.of(context).alternate,
+                    width: 2.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: FlutterFlowTheme.of(context).primary,
+                    width: 2.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                errorBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: FlutterFlowTheme.of(context).error,
+                    width: 2.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                focusedErrorBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: FlutterFlowTheme.of(context).error,
+                    width: 2.0,
+                  ),
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
+                filled: true,
+                fillColor: FlutterFlowTheme.of(context).primaryBackground,
+                contentPadding:
+                    const EdgeInsetsDirectional.fromSTEB(16.0, 12.0, 0.0, 12.0),
+              ),
+              style: FlutterFlowTheme.of(context).bodyMedium,
+              textAlign: TextAlign.start,
+              maxLines: 3,
+              cursorColor: FlutterFlowTheme.of(context).primary,
+              validator: _model.myBioControllerValidator.asValidator(context),
             ),
           ),
           Align(
@@ -381,36 +398,8 @@ class _EditProfileComponentWidgetState
             child: Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(20.0, 24.0, 20.0, 0.0),
               child: FFButtonWidget(
-                onPressed: () async {
-                  if (_model.formKey.currentState == null ||
-                      !_model.formKey.currentState!.validate()) {
-                    return;
-                  }
-                  // updateUserInfo
-
-                  await currentUserReference!.update(createUsersRecordData(
-                    displayName: _model.yourNameController.text,
-                    photoUrl: _model.uploadedFileUrl != ''
-                        ? _model.uploadedFileUrl
-                        : currentUserPhoto,
-                    shortDescription: _model.myBioController.text,
-                    lastActiveTime: getCurrentTimestamp,
-                    role: _model.dropDownValue,
-                  ));
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    SnackBar(
-                      content: Text(
-                        'Profile has been updated!',
-                        style: FlutterFlowTheme.of(context).titleSmall.override(
-                              fontFamily: 'Readex Pro',
-                              color: FlutterFlowTheme.of(context).info,
-                            ),
-                      ),
-                      duration: const Duration(milliseconds: 4000),
-                      backgroundColor: FlutterFlowTheme.of(context).primary,
-                    ),
-                  );
-                  await widget.navigateAction?.call();
+                onPressed: () {
+                  print('Button-Login pressed ...');
                 },
                 text: widget.confirmButtonText,
                 options: FFButtonOptions(

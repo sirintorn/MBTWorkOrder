@@ -69,6 +69,8 @@ class _LoginWidgetState extends State<LoginWidget>
 
     _model.passwordController ??= TextEditingController();
     _model.passwordFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -141,12 +143,16 @@ class _LoginWidgetState extends State<LoginWidget>
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'MBT \nWork Order Management',
+                          FFLocalizations.of(context).getText(
+                            '3w1etdc7' /* MBT 
+Work Order Management */
+                            ,
+                          ),
                           textAlign: TextAlign.center,
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: 'Outfit',
+                                fontFamily: 'Readex Pro',
                                 color: FlutterFlowTheme.of(context).info,
                                 fontSize: 28.0,
                                 fontWeight: FontWeight.w600,
@@ -210,7 +216,10 @@ class _LoginWidgetState extends State<LoginWidget>
                                   autofillHints: const [AutofillHints.email],
                                   obscureText: false,
                                   decoration: InputDecoration(
-                                    labelText: 'Email',
+                                    labelText:
+                                        FFLocalizations.of(context).getText(
+                                      'lz78aqb3' /* Email */,
+                                    ),
                                     labelStyle:
                                         FlutterFlowTheme.of(context).labelLarge,
                                     enabledBorder: OutlineInputBorder(
@@ -271,7 +280,10 @@ class _LoginWidgetState extends State<LoginWidget>
                                   autofillHints: const [AutofillHints.password],
                                   obscureText: !_model.passwordVisibility,
                                   decoration: InputDecoration(
-                                    labelText: 'Password',
+                                    labelText:
+                                        FFLocalizations.of(context).getText(
+                                      'cy16fg71' /* Password */,
+                                    ),
                                     labelStyle:
                                         FlutterFlowTheme.of(context).labelLarge,
                                     enabledBorder: OutlineInputBorder(
@@ -352,7 +364,9 @@ class _LoginWidgetState extends State<LoginWidget>
 
                                   context.goNamedAuth('login', context.mounted);
                                 },
-                                text: 'Sign In',
+                                text: FFLocalizations.of(context).getText(
+                                  '3oe97gl7' /* Sign In */,
+                                ),
                                 options: FFButtonOptions(
                                   width: double.infinity,
                                   height: 44.0,
@@ -364,7 +378,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Readex Pro',
+                                        fontFamily: 'Inter',
                                         color: Colors.white,
                                       ),
                                   elevation: 3.0,
@@ -406,16 +420,22 @@ class _LoginWidgetState extends State<LoginWidget>
                                         MediaQuery.of(context).textScaleFactor,
                                     text: TextSpan(
                                       children: [
-                                        const TextSpan(
-                                          text: 'Don\'t have an account?  ',
-                                          style: TextStyle(),
+                                        TextSpan(
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            'bav1wkqt' /* Don't have an account?   */,
+                                          ),
+                                          style: const TextStyle(),
                                         ),
                                         TextSpan(
-                                          text: 'Create Account',
+                                          text: FFLocalizations.of(context)
+                                              .getText(
+                                            '5apblyde' /* Create Account */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Readex Pro',
+                                                fontFamily: 'Inter',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primary,
@@ -437,7 +457,9 @@ class _LoginWidgetState extends State<LoginWidget>
                                 onPressed: () async {
                                   context.pushNamed('forgetPassword');
                                 },
-                                text: 'Forgot password?',
+                                text: FFLocalizations.of(context).getText(
+                                  'c3qvm3p7' /* Forgot password? */,
+                                ),
                                 options: FFButtonOptions(
                                   width: double.infinity,
                                   height: 44.0,
@@ -450,7 +472,7 @@ class _LoginWidgetState extends State<LoginWidget>
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Readex Pro',
+                                        fontFamily: 'Inter',
                                         color: FlutterFlowTheme.of(context)
                                             .primaryText,
                                       ),

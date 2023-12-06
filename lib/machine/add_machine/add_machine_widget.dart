@@ -32,6 +32,8 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
 
     _model.searchFieldController ??= TextEditingController();
     _model.searchFieldFocusNode ??= FocusNode();
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -117,7 +119,9 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
                                   Text(
-                                    'Add Machine',
+                                    FFLocalizations.of(context).getText(
+                                      'qsrhiccc' /* Add Machine */,
+                                    ),
                                     style: FlutterFlowTheme.of(context)
                                         .headlineMedium,
                                   ),
@@ -138,7 +142,9 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                         padding: const EdgeInsetsDirectional.fromSTEB(
                                             16.0, 0.0, 0.0, 0.0),
                                         child: Text(
-                                          'Find machine by searching below to add them to this task.',
+                                          FFLocalizations.of(context).getText(
+                                            'x2e278e8' /* Find machine by searching belo... */,
+                                          ),
                                           style: FlutterFlowTheme.of(context)
                                               .bodySmall,
                                         ),
@@ -164,8 +170,11 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                 autofocus: true,
                                                 obscureText: false,
                                                 decoration: InputDecoration(
-                                                  labelText:
-                                                      'Search machine...',
+                                                  labelText: FFLocalizations.of(
+                                                          context)
+                                                      .getText(
+                                                    'w42y7ih2' /* Search machine... */,
+                                                  ),
                                                   labelStyle:
                                                       FlutterFlowTheme.of(
                                                               context)
@@ -336,7 +345,11 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                                       .start,
                                                               children: [
                                                                 Text(
-                                                                  'Machine Name',
+                                                                  FFLocalizations.of(
+                                                                          context)
+                                                                      .getText(
+                                                                    'jn5eqa5r' /* Machine Name */,
+                                                                  ),
                                                                   style: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium,
@@ -347,13 +360,17 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                                           .max,
                                                                   children: [
                                                                     Text(
-                                                                      'Location',
+                                                                      FFLocalizations.of(
+                                                                              context)
+                                                                          .getText(
+                                                                        '2po6bwhf' /* Location */,
+                                                                      ),
                                                                       style: FlutterFlowTheme.of(
                                                                               context)
                                                                           .bodySmall
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Readex Pro',
+                                                                                'Inter',
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                           ),
@@ -369,7 +386,11 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                             print(
                                                                 'Button pressed ...');
                                                           },
-                                                          text: 'View',
+                                                          text: FFLocalizations
+                                                                  .of(context)
+                                                              .getText(
+                                                            'xb4cykca' /* View */,
+                                                          ),
                                                           options:
                                                               FFButtonOptions(
                                                             width: 70.0,
@@ -500,7 +521,11 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                                         .max,
                                                                 children: [
                                                                   Text(
-                                                                    'user@domainname.com',
+                                                                    FFLocalizations.of(
+                                                                            context)
+                                                                        .getText(
+                                                                      'd0vs2tkj' /* user@domainname.com */,
+                                                                    ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodySmall,
@@ -516,7 +541,12 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                           print(
                                                               'Button pressed ...');
                                                         },
-                                                        text: 'View',
+                                                        text:
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                          'gha5de8r' /* View */,
+                                                        ),
                                                         options:
                                                             FFButtonOptions(
                                                           width: 70.0,
@@ -632,7 +662,11 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                                     .start,
                                                             children: [
                                                               Text(
-                                                                'Username',
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'gt2zg7ji' /* Username */,
+                                                                ),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium,
@@ -643,7 +677,11 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                                         .max,
                                                                 children: [
                                                                   Text(
-                                                                    'user@domainname.com',
+                                                                    FFLocalizations.of(
+                                                                            context)
+                                                                        .getText(
+                                                                      'yp1pjhfe' /* user@domainname.com */,
+                                                                    ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodySmall,
@@ -659,7 +697,12 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                           print(
                                                               'Button pressed ...');
                                                         },
-                                                        text: 'View',
+                                                        text:
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                          'r1oyppmk' /* View */,
+                                                        ),
                                                         options:
                                                             FFButtonOptions(
                                                           width: 70.0,
@@ -775,7 +818,11 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                                     .start,
                                                             children: [
                                                               Text(
-                                                                'Username',
+                                                                FFLocalizations.of(
+                                                                        context)
+                                                                    .getText(
+                                                                  'vm7b6bhx' /* Username */,
+                                                                ),
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium,
@@ -786,7 +833,11 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                                         .max,
                                                                 children: [
                                                                   Text(
-                                                                    'user@domainname.com',
+                                                                    FFLocalizations.of(
+                                                                            context)
+                                                                        .getText(
+                                                                      'l5eop1li' /* user@domainname.com */,
+                                                                    ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodySmall,
@@ -802,7 +853,12 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                           print(
                                                               'Button pressed ...');
                                                         },
-                                                        text: 'View',
+                                                        text:
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                          'kp5o1zlz' /* View */,
+                                                        ),
                                                         options:
                                                             FFButtonOptions(
                                                           width: 70.0,
@@ -932,7 +988,11 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                                         .max,
                                                                 children: [
                                                                   Text(
-                                                                    'user@domainname.com',
+                                                                    FFLocalizations.of(
+                                                                            context)
+                                                                        .getText(
+                                                                      'v7sd9tj2' /* user@domainname.com */,
+                                                                    ),
                                                                     style: FlutterFlowTheme.of(
                                                                             context)
                                                                         .bodySmall,
@@ -948,7 +1008,12 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                           print(
                                                               'Button pressed ...');
                                                         },
-                                                        text: 'View',
+                                                        text:
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                          '2yl5qtq8' /* View */,
+                                                        ),
                                                         options:
                                                             FFButtonOptions(
                                                           width: 70.0,

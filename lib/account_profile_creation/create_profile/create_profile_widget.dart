@@ -62,6 +62,8 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => CreateProfileModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -127,11 +129,13 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget>
                           size: 44.0,
                         ),
                         Text(
-                          'User Management',
+                          FFLocalizations.of(context).getText(
+                            'ognma3r6' /* User Management */,
+                          ),
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: 'Outfit',
+                                fontFamily: 'Readex Pro',
                                 color: FlutterFlowTheme.of(context).info,
                                 fontSize: 30.0,
                                 fontWeight: FontWeight.w600,

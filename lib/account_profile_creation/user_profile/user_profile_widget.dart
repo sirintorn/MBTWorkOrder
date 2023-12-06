@@ -70,6 +70,8 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
   void initState() {
     super.initState();
     _model = createModel(context, () => UserProfileModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -171,18 +173,15 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                             child: Padding(
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   4.0, 4.0, 4.0, 4.0),
-                              child: AuthUserStreamWidget(
-                                builder: (context) => ClipRRect(
-                                  borderRadius: BorderRadius.circular(50.0),
-                                  child: CachedNetworkImage(
-                                    fadeInDuration: const Duration(milliseconds: 500),
-                                    fadeOutDuration:
-                                        const Duration(milliseconds: 500),
-                                    imageUrl: currentUserPhoto,
-                                    width: 100.0,
-                                    height: 100.0,
-                                    fit: BoxFit.cover,
-                                  ),
+                              child: ClipRRect(
+                                borderRadius: BorderRadius.circular(50.0),
+                                child: CachedNetworkImage(
+                                  fadeInDuration: const Duration(milliseconds: 500),
+                                  fadeOutDuration: const Duration(milliseconds: 500),
+                                  imageUrl: currentUserPhoto,
+                                  width: 100.0,
+                                  height: 100.0,
+                                  fit: BoxFit.cover,
                                 ),
                               ),
                             ),
@@ -194,11 +193,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                 ),
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 0.0, 0.0),
-                  child: AuthUserStreamWidget(
-                    builder: (context) => Text(
-                      currentUserDisplayName,
-                      style: FlutterFlowTheme.of(context).displaySmall,
-                    ),
+                  child: Text(
+                    currentUserDisplayName,
+                    style: FlutterFlowTheme.of(context).displaySmall,
                   ),
                 ),
                 Padding(
@@ -209,7 +206,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                       'andrew@domainname.com',
                     ),
                     style: FlutterFlowTheme.of(context).labelLarge.override(
-                          fontFamily: 'Readex Pro',
+                          fontFamily: 'Inter',
                           color: FlutterFlowTheme.of(context).primary,
                         ),
                   ),
@@ -217,7 +214,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(24.0, 4.0, 0.0, 0.0),
                   child: Text(
-                    'Your Account',
+                    FFLocalizations.of(context).getText(
+                      'u98xr8tf' /* Your Account */,
+                    ),
                     style: FlutterFlowTheme.of(context).labelMedium,
                   ),
                 ),
@@ -266,7 +265,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   12.0, 0.0, 0.0, 0.0),
                               child: Text(
-                                'Edit Profile',
+                                FFLocalizations.of(context).getText(
+                                  '1289du02' /* Edit Profile */,
+                                ),
                                 style: FlutterFlowTheme.of(context).labelLarge,
                               ),
                             ),
@@ -290,7 +291,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(24.0, 16.0, 0.0, 0.0),
                   child: Text(
-                    'App Settings',
+                    FFLocalizations.of(context).getText(
+                      '54h0uczg' /* App Settings */,
+                    ),
                     style: FlutterFlowTheme.of(context).labelMedium,
                   ),
                 ),
@@ -331,7 +334,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Support',
+                              FFLocalizations.of(context).getText(
+                                'yxnxphsn' /* Support */,
+                              ),
                               style: FlutterFlowTheme.of(context).labelLarge,
                             ),
                           ),
@@ -388,7 +393,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                             padding: const EdgeInsetsDirectional.fromSTEB(
                                 12.0, 0.0, 0.0, 0.0),
                             child: Text(
-                              'Terms of Service',
+                              FFLocalizations.of(context).getText(
+                                'qpsx9v6u' /* Terms of Service */,
+                              ),
                               style: FlutterFlowTheme.of(context).labelLarge,
                             ),
                           ),
@@ -421,7 +428,9 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
 
                         context.goNamedAuth('login', context.mounted);
                       },
-                      text: 'Log Out',
+                      text: FFLocalizations.of(context).getText(
+                        'd73dd6uj' /* Log Out */,
+                      ),
                       options: FFButtonOptions(
                         width: 150.0,
                         height: 44.0,
