@@ -1,4 +1,4 @@
-import '/auth/firebase_auth/auth_util.dart';
+import '/auth/custom_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -178,7 +178,8 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                                 child: CachedNetworkImage(
                                   fadeInDuration: const Duration(milliseconds: 500),
                                   fadeOutDuration: const Duration(milliseconds: 500),
-                                  imageUrl: currentUserPhoto,
+                                  imageUrl:
+                                      'https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTZ8fHByb2ZpbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60',
                                   width: 100.0,
                                   height: 100.0,
                                   fit: BoxFit.cover,
@@ -194,19 +195,20 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(24.0, 12.0, 0.0, 0.0),
                   child: Text(
-                    currentUserDisplayName,
+                    FFLocalizations.of(context).getText(
+                      '3ji5a1uy' /* Andrew D. */,
+                    ),
                     style: FlutterFlowTheme.of(context).displaySmall,
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(24.0, 4.0, 0.0, 16.0),
                   child: Text(
-                    valueOrDefault<String>(
-                      currentUserEmail,
-                      'andrew@domainname.com',
+                    FFLocalizations.of(context).getText(
+                      'tvsdv1gx' /* andrew@domainname.com */,
                     ),
                     style: FlutterFlowTheme.of(context).labelLarge.override(
-                          fontFamily: 'Inter',
+                          fontFamily: 'Readex Pro',
                           color: FlutterFlowTheme.of(context).primary,
                         ),
                   ),
@@ -426,7 +428,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                         await authManager.signOut();
                         GoRouter.of(context).clearRedirectLocation();
 
-                        context.goNamedAuth('login', context.mounted);
+                        context.goNamedAuth('HomePage', context.mounted);
                       },
                       text: FFLocalizations.of(context).getText(
                         'd73dd6uj' /* Log Out */,

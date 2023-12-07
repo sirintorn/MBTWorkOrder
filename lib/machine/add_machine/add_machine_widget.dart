@@ -370,7 +370,7 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
                                                                           .bodySmall
                                                                           .override(
                                                                             fontFamily:
-                                                                                'Inter',
+                                                                                'Readex Pro',
                                                                             color:
                                                                                 FlutterFlowTheme.of(context).primary,
                                                                           ),

@@ -231,6 +231,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // userProfile
   {
+    '3ji5a1uy': {
+      'th': 'Andrew D.',
+      'en': '',
+    },
+    'tvsdv1gx': {
+      'th': 'andrew@domainname.com',
+      'en': '',
+    },
     'u98xr8tf': {
       'th': 'Your Account',
       'en': '',
@@ -356,6 +364,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'th': 'User Management',
       'en': '',
     },
+    'ufcnrxim': {
+      'th': 'Andrew D.',
+      'en': '',
+    },
     'bev286v0': {
       'th': 'Admin',
       'en': '',
@@ -377,6 +389,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     },
     '00h6ly0n': {
       'th': 'Your full name...',
+      'en': '',
+    },
+    'j3dzznl9': {
+      'th': '[display_name]',
       'en': '',
     },
     '0udbssa2': {

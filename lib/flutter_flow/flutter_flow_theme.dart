@@ -125,21 +125,21 @@ class LightModeTheme extends FlutterFlowTheme {
   @Deprecated('Use tertiary instead')
   Color get tertiaryColor => tertiary;
 
-  late Color primary = const Color(0xFF06D5CD);
-  late Color secondary = const Color(0xFF18AA99);
-  late Color tertiary = const Color(0xFF984BB6);
-  late Color alternate = const Color(0xFFDFEDEC);
-  late Color primaryText = const Color(0xFF101518);
+  late Color primary = const Color(0xFF19DB8A);
+  late Color secondary = const Color(0xFF36B4FF);
+  late Color tertiary = const Color(0xFFFFA130);
+  late Color alternate = const Color(0xFFE0E3E7);
+  late Color primaryText = const Color(0xFF14181B);
   late Color secondaryText = const Color(0xFF57636C);
-  late Color primaryBackground = const Color(0xFFF5FBFB);
+  late Color primaryBackground = const Color(0xFFF1F4F8);
   late Color secondaryBackground = const Color(0xFFFFFFFF);
-  late Color accent1 = const Color(0x4C06D5CD);
-  late Color accent2 = const Color(0x4D18AA99);
-  late Color accent3 = const Color(0x4D984BB6);
-  late Color accent4 = const Color(0xB2FFFFFF);
-  late Color success = const Color(0xFF16857B);
-  late Color warning = const Color(0xFFF3C344);
-  late Color error = const Color(0xFFC4454D);
+  late Color accent1 = const Color(0x4C19DB8A);
+  late Color accent2 = const Color(0x4D36B4FF);
+  late Color accent3 = const Color(0x4DFFA130);
+  late Color accent4 = const Color(0xABFFFFFF);
+  late Color success = const Color(0xFF16B070);
+  late Color warning = const Color(0xFFCC8E30);
+  late Color error = const Color(0xFFFF5963);
   late Color info = const Color(0xFFFFFFFF);
 }
 
@@ -181,106 +181,106 @@ class ThemeTypography extends Typography {
 
   final FlutterFlowTheme theme;
 
-  String get displayLargeFamily => 'Readex Pro';
+  String get displayLargeFamily => 'Inter';
   TextStyle get displayLarge => GoogleFonts.getFont(
-        'Readex Pro',
+        'Inter',
         color: theme.primaryText,
-        fontWeight: FontWeight.w300,
-        fontSize: 52.0,
+        fontWeight: FontWeight.normal,
+        fontSize: 57.0,
       );
-  String get displayMediumFamily => 'Readex Pro';
+  String get displayMediumFamily => 'Inter';
   TextStyle get displayMedium => GoogleFonts.getFont(
-        'Readex Pro',
+        'Inter',
         color: theme.primaryText,
-        fontWeight: FontWeight.w500,
-        fontSize: 44.0,
+        fontWeight: FontWeight.normal,
+        fontSize: 45.0,
       );
-  String get displaySmallFamily => 'Readex Pro';
+  String get displaySmallFamily => 'Inter';
   TextStyle get displaySmall => GoogleFonts.getFont(
-        'Readex Pro',
+        'Inter',
         color: theme.primaryText,
-        fontWeight: FontWeight.w500,
-        fontSize: 36.0,
+        fontWeight: FontWeight.bold,
+        fontSize: 30.0,
       );
-  String get headlineLargeFamily => 'Readex Pro';
+  String get headlineLargeFamily => 'Inter';
   TextStyle get headlineLarge => GoogleFonts.getFont(
-        'Readex Pro',
+        'Inter',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 32.0,
       );
-  String get headlineMediumFamily => 'Readex Pro';
+  String get headlineMediumFamily => 'Inter';
   TextStyle get headlineMedium => GoogleFonts.getFont(
-        'Readex Pro',
+        'Inter',
         color: theme.primaryText,
-        fontWeight: FontWeight.normal,
-        fontSize: 28.0,
-      );
-  String get headlineSmallFamily => 'Readex Pro';
-  TextStyle get headlineSmall => GoogleFonts.getFont(
-        'Readex Pro',
-        color: theme.primaryText,
-        fontWeight: FontWeight.normal,
+        fontWeight: FontWeight.w500,
         fontSize: 24.0,
       );
-  String get titleLargeFamily => 'Inter';
-  TextStyle get titleLarge => GoogleFonts.getFont(
+  String get headlineSmallFamily => 'Inter';
+  TextStyle get headlineSmall => GoogleFonts.getFont(
         'Inter',
+        color: theme.primaryText,
+        fontWeight: FontWeight.w500,
+        fontSize: 20.0,
+      );
+  String get titleLargeFamily => 'Readex Pro';
+  TextStyle get titleLarge => GoogleFonts.getFont(
+        'Readex Pro',
         color: theme.primaryText,
         fontWeight: FontWeight.w500,
         fontSize: 22.0,
       );
-  String get titleMediumFamily => 'Inter';
+  String get titleMediumFamily => 'Readex Pro';
   TextStyle get titleMedium => GoogleFonts.getFont(
-        'Inter',
-        color: theme.info,
-        fontWeight: FontWeight.w500,
-        fontSize: 18.0,
-      );
-  String get titleSmallFamily => 'Inter';
-  TextStyle get titleSmall => GoogleFonts.getFont(
-        'Inter',
+        'Readex Pro',
         color: theme.info,
         fontWeight: FontWeight.w500,
         fontSize: 16.0,
       );
-  String get labelLargeFamily => 'Inter';
+  String get titleSmallFamily => 'Readex Pro';
+  TextStyle get titleSmall => GoogleFonts.getFont(
+        'Readex Pro',
+        color: theme.info,
+        fontWeight: FontWeight.w500,
+        fontSize: 14.0,
+      );
+  String get labelLargeFamily => 'Readex Pro';
   TextStyle get labelLarge => GoogleFonts.getFont(
-        'Inter',
+        'Readex Pro',
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 16.0,
       );
-  String get labelMediumFamily => 'Inter';
+  String get labelMediumFamily => 'Readex Pro';
   TextStyle get labelMedium => GoogleFonts.getFont(
-        'Inter',
+        'Readex Pro',
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 14.0,
       );
-  String get labelSmallFamily => 'Inter';
+  String get labelSmallFamily => 'Readex Pro';
   TextStyle get labelSmall => GoogleFonts.getFont(
-        'Inter',
+        'Readex Pro',
         color: theme.secondaryText,
         fontWeight: FontWeight.w500,
         fontSize: 12.0,
       );
-  String get bodyLargeFamily => 'Inter';
+  String get bodyLargeFamily => 'Readex Pro';
   TextStyle get bodyLarge => GoogleFonts.getFont(
-        'Inter',
+        'Readex Pro',
         color: theme.primaryText,
         fontSize: 16.0,
       );
-  String get bodyMediumFamily => 'Inter';
+  String get bodyMediumFamily => 'Readex Pro';
   TextStyle get bodyMedium => GoogleFonts.getFont(
-        'Inter',
+        'Readex Pro',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 14.0,
       );
-  String get bodySmallFamily => 'Inter';
+  String get bodySmallFamily => 'Readex Pro';
   TextStyle get bodySmall => GoogleFonts.getFont(
-        'Inter',
+        'Readex Pro',
         color: theme.primaryText,
         fontWeight: FontWeight.normal,
         fontSize: 12.0,
@@ -295,21 +295,21 @@ class DarkModeTheme extends FlutterFlowTheme {
   @Deprecated('Use tertiary instead')
   Color get tertiaryColor => tertiary;
 
-  late Color primary = const Color(0xFF06D5CD);
-  late Color secondary = const Color(0xFF18AA99);
-  late Color tertiary = const Color(0xFF984BB6);
-  late Color alternate = const Color(0xFF293D3E);
+  late Color primary = const Color(0xFF19DB8A);
+  late Color secondary = const Color(0xFF36B4FF);
+  late Color tertiary = const Color(0xFFFFA130);
+  late Color alternate = const Color(0xFF2B323B);
   late Color primaryText = const Color(0xFFFFFFFF);
   late Color secondaryText = const Color(0xFF95A1AC);
-  late Color primaryBackground = const Color(0xFF132121);
-  late Color secondaryBackground = const Color(0xFF101818);
-  late Color accent1 = const Color(0x4C06D5CD);
-  late Color accent2 = const Color(0x4D18AA99);
-  late Color accent3 = const Color(0x4D984BB6);
-  late Color accent4 = const Color(0xB3101818);
-  late Color success = const Color(0xFF16857B);
-  late Color warning = const Color(0xFFF3C344);
-  late Color error = const Color(0xFFC4454D);
+  late Color primaryBackground = const Color(0xFF14181B);
+  late Color secondaryBackground = const Color(0xFF1D2429);
+  late Color accent1 = const Color(0x4C19DB8A);
+  late Color accent2 = const Color(0x4D36B4FF);
+  late Color accent3 = const Color(0x4CFFA130);
+  late Color accent4 = const Color(0xB214181B);
+  late Color success = const Color(0xFF16B070);
+  late Color warning = const Color(0xFFCC8E30);
+  late Color error = const Color(0xFFFF5963);
   late Color info = const Color(0xFFFFFFFF);
 }
 

@@ -1,4 +1,3 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -119,7 +118,7 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
                             ),
                             style:
                                 FlutterFlowTheme.of(context).bodySmall.override(
-                                      fontFamily: 'Inter',
+                                      fontFamily: 'Readex Pro',
                                       fontWeight: FontWeight.w600,
                                     ),
                           ),
@@ -158,7 +157,7 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Inter',
+                                    fontFamily: 'Readex Pro',
                                     fontWeight: FontWeight.w600,
                                   ),
                         ),
@@ -193,7 +192,7 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
                             style: FlutterFlowTheme.of(context)
                                 .bodyMedium
                                 .override(
-                                  fontFamily: 'Inter',
+                                  fontFamily: 'Readex Pro',
                                   color:
                                       FlutterFlowTheme.of(context).primaryText,
                                 ),
@@ -232,7 +231,7 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Inter',
+                                    fontFamily: 'Readex Pro',
                                     fontWeight: FontWeight.w600,
                                   ),
                         ),
@@ -269,7 +268,7 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
                           ),
                           style:
                               FlutterFlowTheme.of(context).bodySmall.override(
-                                    fontFamily: 'Inter',
+                                    fontFamily: 'Readex Pro',
                                     fontWeight: FontWeight.w600,
                                   ),
                         ),
@@ -330,7 +329,9 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    currentUserDisplayName,
+                                    FFLocalizations.of(context).getText(
+                                      'ufcnrxim' /* Andrew D. */,
+                                    ),
                                     style:
                                         FlutterFlowTheme.of(context).bodyMedium,
                                   ),
@@ -344,7 +345,7 @@ class _MainMenuWidgetState extends State<MainMenuWidget> {
                                       style: FlutterFlowTheme.of(context)
                                           .bodySmall
                                           .override(
-                                            fontFamily: 'Inter',
+                                            fontFamily: 'Readex Pro',
                                             color: FlutterFlowTheme.of(context)
                                                 .primary,
                                             fontSize: 12.0,

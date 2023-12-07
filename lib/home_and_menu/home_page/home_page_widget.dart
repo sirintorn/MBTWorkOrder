@@ -58,7 +58,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
               'oibuzifg' /* Page Title */,
             ),
             style: FlutterFlowTheme.of(context).headlineMedium.override(
-                  fontFamily: 'Readex Pro',
+                  fontFamily: 'Inter',
                   color: Colors.white,
                   fontSize: 22.0,
                 ),

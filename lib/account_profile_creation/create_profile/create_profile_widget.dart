@@ -135,7 +135,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget>
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: 'Readex Pro',
+                                fontFamily: 'Inter',
                                 color: FlutterFlowTheme.of(context).info,
                                 fontSize: 30.0,
                                 fontWeight: FontWeight.w600,

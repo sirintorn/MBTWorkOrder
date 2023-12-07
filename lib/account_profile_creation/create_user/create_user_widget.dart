@@ -1,4 +1,3 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -147,7 +146,7 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                               style: FlutterFlowTheme.of(context)
                                   .displaySmall
                                   .override(
-                                    fontFamily: 'Readex Pro',
+                                    fontFamily: 'Inter',
                                     color: FlutterFlowTheme.of(context).info,
                                     fontSize: 30.0,
                                     fontWeight: FontWeight.w600,
@@ -361,21 +360,8 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                                   padding: const EdgeInsetsDirectional.fromSTEB(
                                       0.0, 0.0, 0.0, 16.0),
                                   child: FFButtonWidget(
-                                    onPressed: () async {
-                                      GoRouter.of(context).prepareAuthEvent();
-
-                                      final user = await authManager
-                                          .createAccountWithEmail(
-                                        context,
-                                        _model.emailAddressController.text,
-                                        _model.passwordController.text,
-                                      );
-                                      if (user == null) {
-                                        return;
-                                      }
-
-                                      context.goNamedAuth(
-                                          'createProfile', context.mounted);
+                                    onPressed: () {
+                                      print('Button pressed ...');
                                     },
                                     text: FFLocalizations.of(context).getText(
                                       'spd59n4v' /* Create Account */,
@@ -393,7 +379,7 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
-                                            fontFamily: 'Inter',
+                                            fontFamily: 'Readex Pro',
                                             color: Colors.white,
                                           ),
                                       elevation: 3.0,
@@ -467,7 +453,7 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                                                       context)
                                                   .bodyMedium
                                                   .override(
-                                                    fontFamily: 'Inter',
+                                                    fontFamily: 'Readex Pro',
                                                     color: FlutterFlowTheme.of(
                                                             context)
                                                         .primary,

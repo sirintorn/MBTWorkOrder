@@ -1,4 +1,3 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -152,7 +151,7 @@ Work Order Management */
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: 'Readex Pro',
+                                fontFamily: 'Inter',
                                 color: FlutterFlowTheme.of(context).info,
                                 fontSize: 28.0,
                                 fontWeight: FontWeight.w600,
@@ -349,20 +348,8 @@ Work Order Management */
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 16.0),
                               child: FFButtonWidget(
-                                onPressed: () async {
-                                  GoRouter.of(context).prepareAuthEvent();
-
-                                  final user =
-                                      await authManager.signInWithEmail(
-                                    context,
-                                    _model.emailAddressController.text,
-                                    _model.passwordController.text,
-                                  );
-                                  if (user == null) {
-                                    return;
-                                  }
-
-                                  context.goNamedAuth('login', context.mounted);
+                                onPressed: () {
+                                  print('Button pressed ...');
                                 },
                                 text: FFLocalizations.of(context).getText(
                                   '3oe97gl7' /* Sign In */,
@@ -378,7 +365,7 @@ Work Order Management */
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Inter',
+                                        fontFamily: 'Readex Pro',
                                         color: Colors.white,
                                       ),
                                   elevation: 3.0,
@@ -435,7 +422,7 @@ Work Order Management */
                                           style: FlutterFlowTheme.of(context)
                                               .bodyMedium
                                               .override(
-                                                fontFamily: 'Inter',
+                                                fontFamily: 'Readex Pro',
                                                 color:
                                                     FlutterFlowTheme.of(context)
                                                         .primary,
@@ -472,7 +459,7 @@ Work Order Management */
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Inter',
+                                        fontFamily: 'Readex Pro',
                                         color: FlutterFlowTheme.of(context)
                                             .primaryText,
                                       ),

@@ -1,11 +1,8 @@
-import '/auth/firebase_auth/auth_util.dart';
-import '/backend/firebase_storage/storage.dart';
 import '/flutter_flow/flutter_flow_drop_down.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
-import '/flutter_flow/upload_data.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'edit_profile_component_model.dart';
@@ -44,14 +41,16 @@ class _EditProfileComponentWidgetState
     super.initState();
     _model = createModel(context, () => EditProfileComponentModel());
 
-    _model.yourNameController ??=
-        TextEditingController(text: currentUserDisplayName);
+    _model.yourNameController ??= TextEditingController();
     _model.yourNameFocusNode ??= FocusNode();
 
     _model.myBioController ??= TextEditingController();
     _model.myBioFocusNode ??= FocusNode();
 
     WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {
+          _model.yourNameController?.text = FFLocalizations.of(context).getText(
+            'j3dzznl9' /* [display_name] */,
+          );
           _model.myBioController?.text = FFLocalizations.of(context).getText(
             '06doruz3' /* [bio] */,
           );
@@ -117,10 +116,8 @@ class _EditProfileComponentWidgetState
                           child: CachedNetworkImage(
                             fadeInDuration: const Duration(milliseconds: 200),
                             fadeOutDuration: const Duration(milliseconds: 200),
-                            imageUrl: valueOrDefault<String>(
-                              currentUserPhoto,
-                              'https://images.unsplash.com/photo-1499887142886-791eca5918cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxN3x8dXNlcnxlbnwwfHx8fDE2OTc4MjQ2MjZ8MA&ixlib=rb-4.0.3&q=80&w=400',
-                            ),
+                            imageUrl:
+                                'https://images.unsplash.com/photo-1499887142886-791eca5918cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxN3x8dXNlcnxlbnwwfHx8fDE2OTc4MjQ2MjZ8MA&ixlib=rb-4.0.3&q=80&w=400',
                             width: 300.0,
                             height: 200.0,
                             fit: BoxFit.cover,
@@ -135,7 +132,8 @@ class _EditProfileComponentWidgetState
                           child: CachedNetworkImage(
                             fadeInDuration: const Duration(milliseconds: 200),
                             fadeOutDuration: const Duration(milliseconds: 200),
-                            imageUrl: _model.uploadedFileUrl,
+                            imageUrl:
+                                'https://images.unsplash.com/photo-1499887142886-791eca5918cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTYyMDF8MHwxfHNlYXJjaHwxN3x8dXNlcnxlbnwwfHx8fDE2OTc4MjQ2MjZ8MA&ixlib=rb-4.0.3&q=80&w=400',
                             width: 300.0,
                             height: 200.0,
                             fit: BoxFit.cover,
@@ -153,59 +151,8 @@ class _EditProfileComponentWidgetState
             child: Padding(
               padding: const EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 32.0),
               child: FFButtonWidget(
-                onPressed: () async {
-                  final selectedMedia = await selectMedia(
-                    mediaSource: MediaSource.photoGallery,
-                    multiImage: false,
-                  );
-                  if (selectedMedia != null &&
-                      selectedMedia.every(
-                          (m) => validateFileFormat(m.storagePath, context))) {
-                    setState(() => _model.isDataUploading = true);
-                    var selectedUploadedFiles = <FFUploadedFile>[];
-
-                    var downloadUrls = <String>[];
-                    try {
-                      showUploadMessage(
-                        context,
-                        'Uploading file...',
-                        showLoading: true,
-                      );
-                      selectedUploadedFiles = selectedMedia
-                          .map((m) => FFUploadedFile(
-                                name: m.storagePath.split('/').last,
-                                bytes: m.bytes,
-                                height: m.dimensions?.height,
-                                width: m.dimensions?.width,
-                                blurHash: m.blurHash,
-                              ))
-                          .toList();
-
-                      downloadUrls = (await Future.wait(
-                        selectedMedia.map(
-                          (m) async => await uploadData(m.storagePath, m.bytes),
-                        ),
-                      ))
-                          .where((u) => u != null)
-                          .map((u) => u!)
-                          .toList();
-                    } finally {
-                      ScaffoldMessenger.of(context).hideCurrentSnackBar();
-                      _model.isDataUploading = false;
-                    }
-                    if (selectedUploadedFiles.length == selectedMedia.length &&
-                        downloadUrls.length == selectedMedia.length) {
-                      setState(() {
-                        _model.uploadedLocalFile = selectedUploadedFiles.first;
-                        _model.uploadedFileUrl = downloadUrls.first;
-                      });
-                      showUploadMessage(context, 'Success!');
-                    } else {
-                      setState(() {});
-                      showUploadMessage(context, 'Failed to upload data');
-                      return;
-                    }
-                  }
+                onPressed: () {
+                  print('Button pressed ...');
                 },
                 text: FFLocalizations.of(context).getText(
                   'h2n552zz' /* Change Photo */,
@@ -246,7 +193,7 @@ class _EditProfileComponentWidgetState
                 ),
                 hintStyle: FlutterFlowTheme.of(context).labelMedium,
                 errorStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Inter',
+                      fontFamily: 'Readex Pro',
                       color: FlutterFlowTheme.of(context).error,
                     ),
                 enabledBorder: OutlineInputBorder(
@@ -350,7 +297,7 @@ class _EditProfileComponentWidgetState
                 ),
                 hintStyle: FlutterFlowTheme.of(context).labelMedium,
                 errorStyle: FlutterFlowTheme.of(context).bodyMedium.override(
-                      fontFamily: 'Inter',
+                      fontFamily: 'Readex Pro',
                       color: FlutterFlowTheme.of(context).error,
                     ),
                 enabledBorder: OutlineInputBorder(

@@ -1,4 +1,3 @@
-import '/auth/firebase_auth/auth_util.dart';
 import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -140,7 +139,7 @@ class _ForgetPasswordWidgetState extends State<ForgetPasswordWidget>
                           style: FlutterFlowTheme.of(context)
                               .displaySmall
                               .override(
-                                fontFamily: 'Readex Pro',
+                                fontFamily: 'Inter',
                                 color: FlutterFlowTheme.of(context).info,
                                 fontSize: 30.0,
                                 fontWeight: FontWeight.w600,
@@ -292,22 +291,8 @@ class _ForgetPasswordWidgetState extends State<ForgetPasswordWidget>
                               padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 0.0, 0.0, 16.0),
                               child: FFButtonWidget(
-                                onPressed: () async {
-                                  if (_model
-                                      .emailAddressController.text.isEmpty) {
-                                    ScaffoldMessenger.of(context).showSnackBar(
-                                      const SnackBar(
-                                        content: Text(
-                                          'Email required!',
-                                        ),
-                                      ),
-                                    );
-                                    return;
-                                  }
-                                  await authManager.resetPassword(
-                                    email: _model.emailAddressController.text,
-                                    context: context,
-                                  );
+                                onPressed: () {
+                                  print('Button pressed ...');
                                 },
                                 text: FFLocalizations.of(context).getText(
                                   'fwgwjlgl' /* Send Reset Link */,
@@ -323,7 +308,7 @@ class _ForgetPasswordWidgetState extends State<ForgetPasswordWidget>
                                   textStyle: FlutterFlowTheme.of(context)
                                       .titleSmall
                                       .override(
-                                        fontFamily: 'Inter',
+                                        fontFamily: 'Readex Pro',
                                         color: Colors.white,
                                       ),
                                   elevation: 3.0,
