@@ -116,6 +116,109 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': '',
     },
   },
+  // WorkOrderManagement
+  {
+    '566w0xmc': {
+      'th': 'Hello World',
+      'en': '',
+    },
+    '7a1fu90b': {
+      'th': 'Hello World',
+      'en': '',
+    },
+    '7zpeb9cc': {
+      'th': 'Work Order',
+      'en': '',
+    },
+    'tovr8fcx': {
+      'th': 'Plan',
+      'en': '',
+    },
+    'p0ugwmtn': {
+      'th': 'In Progres',
+      'en': '',
+    },
+    '5blwpx0t': {
+      'th': 'taskName',
+      'en': '',
+    },
+    'i2urw6th': {
+      'th': 'Status',
+      'en': '',
+    },
+    'pkt7cimx': {
+      'th': 'Hello World',
+      'en': '',
+    },
+    'w0rg7hj1': {
+      'th': 'Hello World',
+      'en': '',
+    },
+    '62otomxt': {
+      'th': 'MMMEd',
+      'en': '',
+    },
+    'q42mfvzu': {
+      'th': 'jm',
+      'en': '',
+    },
+    '5z1yutk2': {
+      'th': 'taskName',
+      'en': '',
+    },
+    '1gw6lc5h': {
+      'th': 'Status',
+      'en': '',
+    },
+    '942a0yow': {
+      'th': 'Hello World',
+      'en': '',
+    },
+    'l36gaao3': {
+      'th': 'Hello World',
+      'en': '',
+    },
+    '2v5l2rfj': {
+      'th': 'MMMEd',
+      'en': '',
+    },
+    'ow8tkdt1': {
+      'th': 'jm',
+      'en': '',
+    },
+    '0wgyub1q': {
+      'th': 'Complete',
+      'en': '',
+    },
+    '5e3x67dk': {
+      'th': 'taskName',
+      'en': '',
+    },
+    '5usrgwp9': {
+      'th': 'Status',
+      'en': '',
+    },
+    'a2uw4pig': {
+      'th': 'Hello World',
+      'en': '',
+    },
+    'zepax1ir': {
+      'th': 'Hello World',
+      'en': '',
+    },
+    'y6ywbpvj': {
+      'th': 'MMMEd',
+      'en': '',
+    },
+    'jgpz8obl': {
+      'th': 'jm',
+      'en': '',
+    },
+    'f41yr1pm': {
+      'th': 'Work Order',
+      'en': '',
+    },
+  },
   // createUser
   {
     'iq5op30d': {
