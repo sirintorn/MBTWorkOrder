@@ -114,7 +114,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget>
                     ),
                   ),
                   child: Align(
-                    alignment: const AlignmentDirectional(-1.00, 1.00),
+                    alignment: const AlignmentDirectional(-1.0, 1.0),
                     child: Padding(
                       padding:
                           const EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 0.0, 24.0),
@@ -140,7 +140,7 @@ class _EditProfileWidgetState extends State<EditProfileWidget>
                   animationsMap['containerOnPageLoadAnimation']!),
             ),
             Align(
-              alignment: const AlignmentDirectional(0.00, -1.00),
+              alignment: const AlignmentDirectional(0.0, -1.0),
               child: Container(
                 width: double.infinity,
                 constraints: const BoxConstraints(

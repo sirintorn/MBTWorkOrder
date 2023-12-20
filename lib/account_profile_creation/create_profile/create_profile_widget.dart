@@ -104,7 +104,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget>
               end: const AlignmentDirectional(-0.87, 1.0),
             ),
           ),
-          alignment: const AlignmentDirectional(0.00, -1.00),
+          alignment: const AlignmentDirectional(0.0, -1.0),
           child: SingleChildScrollView(
             child: Column(
               mainAxisSize: MainAxisSize.max,
@@ -118,7 +118,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget>
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(16.0),
                     ),
-                    alignment: const AlignmentDirectional(0.00, 0.00),
+                    alignment: const AlignmentDirectional(0.0, 0.0),
                     child: Row(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -146,8 +146,7 @@ class _CreateProfileWidgetState extends State<CreateProfileWidget>
                   ),
                 ),
                 Padding(
-                  padding:
-                      const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                  padding: const EdgeInsets.all(16.0),
                   child: Container(
                     width: double.infinity,
                     constraints: const BoxConstraints(

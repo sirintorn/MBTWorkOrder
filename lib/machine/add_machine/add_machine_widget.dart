@@ -72,10 +72,9 @@ class _AddMachineWidgetState extends State<AddMachineWidget> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Align(
-                  alignment: const AlignmentDirectional(0.00, 0.00),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Padding(
-                    padding:
-                        const EdgeInsetsDirectional.fromSTEB(16.0, 16.0, 16.0, 16.0),
+                    padding: const EdgeInsets.all(16.0),
                     child: Material(
                       color: Colors.transparent,
                       elevation: 5.0,

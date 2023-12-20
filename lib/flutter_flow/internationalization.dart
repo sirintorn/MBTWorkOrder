@@ -138,51 +138,51 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'th': 'In Progres',
       'en': '',
     },
-    '5blwpx0t': {
+    'yf4pnvqq': {
       'th': 'taskName',
       'en': '',
     },
-    'i2urw6th': {
+    'b333408f': {
       'th': 'Status',
       'en': '',
     },
-    'pkt7cimx': {
+    'q96djwxk': {
       'th': 'Hello World',
       'en': '',
     },
-    'w0rg7hj1': {
+    'ngkc3ssu': {
       'th': 'Hello World',
       'en': '',
     },
-    '62otomxt': {
+    'qnu3j4v3': {
       'th': 'MMMEd',
       'en': '',
     },
-    'q42mfvzu': {
+    'tzwxwv9w': {
       'th': 'jm',
       'en': '',
     },
-    '5z1yutk2': {
+    '5am2pii4': {
       'th': 'taskName',
       'en': '',
     },
-    '1gw6lc5h': {
+    'eseea7l5': {
       'th': 'Status',
       'en': '',
     },
-    '942a0yow': {
+    'u9q2my3c': {
       'th': 'Hello World',
       'en': '',
     },
-    'l36gaao3': {
+    'iem5qm0j': {
       'th': 'Hello World',
       'en': '',
     },
-    '2v5l2rfj': {
+    'tkybbymy': {
       'th': 'MMMEd',
       'en': '',
     },
-    'ow8tkdt1': {
+    'grcw1sz0': {
       'th': 'jm',
       'en': '',
     },
@@ -190,27 +190,27 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'th': 'Complete',
       'en': '',
     },
-    '5e3x67dk': {
+    'jm9kc814': {
       'th': 'taskName',
       'en': '',
     },
-    '5usrgwp9': {
+    'zxbb01ui': {
       'th': 'Status',
       'en': '',
     },
-    'a2uw4pig': {
+    'cwxfhk5e': {
       'th': 'Hello World',
       'en': '',
     },
-    'zepax1ir': {
+    'f47xwlzn': {
       'th': 'Hello World',
       'en': '',
     },
-    'y6ywbpvj': {
+    'ioefgtvs': {
       'th': 'MMMEd',
       'en': '',
     },
-    'jgpz8obl': {
+    '1qknhwfx': {
       'th': 'jm',
       'en': '',
     },

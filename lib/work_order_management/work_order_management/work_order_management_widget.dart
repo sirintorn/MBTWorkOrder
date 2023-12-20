@@ -68,7 +68,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
               tablet: false,
             ))
               Align(
-                alignment: const AlignmentDirectional(0.00, 0.00),
+                alignment: const AlignmentDirectional(0.0, 0.0),
                 child: wrapWithModel(
                   model: _model.mainMenuModel,
                   updateCallback: () => setState(() {}),
@@ -198,8 +198,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 12.0, 12.0, 12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -215,7 +214,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '5blwpx0t' /* taskName */,
+                                                      'yf4pnvqq' /* taskName */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -241,7 +240,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        'i2urw6th' /* Status */,
+                                                        'b333408f' /* Status */,
                                                       ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
@@ -261,7 +260,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                             Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'pkt7cimx' /* Hello World */,
+                                                'q96djwxk' /* Hello World */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -280,7 +279,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'w0rg7hj1' /* Hello World */,
+                                                    'ngkc3ssu' /* Hello World */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -300,7 +299,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '62otomxt' /* MMMEd */,
+                                                      'qnu3j4v3' /* MMMEd */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -316,7 +315,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'q42mfvzu' /* jm */,
+                                                    'tzwxwv9w' /* jm */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -357,8 +356,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 12.0, 12.0, 12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -374,7 +372,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '5z1yutk2' /* taskName */,
+                                                      '5am2pii4' /* taskName */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -400,7 +398,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        '1gw6lc5h' /* Status */,
+                                                        'eseea7l5' /* Status */,
                                                       ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
@@ -420,7 +418,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                             Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                '942a0yow' /* Hello World */,
+                                                'u9q2my3c' /* Hello World */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -439,7 +437,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'l36gaao3' /* Hello World */,
+                                                    'iem5qm0j' /* Hello World */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -459,7 +457,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '2v5l2rfj' /* MMMEd */,
+                                                      'tkybbymy' /* MMMEd */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -475,7 +473,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'ow8tkdt1' /* jm */,
+                                                    'grcw1sz0' /* jm */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -522,8 +520,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                         ),
                                       ),
                                       child: Padding(
-                                        padding: const EdgeInsetsDirectional.fromSTEB(
-                                            12.0, 12.0, 12.0, 12.0),
+                                        padding: const EdgeInsets.all(12.0),
                                         child: Column(
                                           mainAxisSize: MainAxisSize.max,
                                           crossAxisAlignment:
@@ -539,7 +536,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      '5e3x67dk' /* taskName */,
+                                                      'jm9kc814' /* taskName */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -565,7 +562,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                       FFLocalizations.of(
                                                               context)
                                                           .getText(
-                                                        '5usrgwp9' /* Status */,
+                                                        'zxbb01ui' /* Status */,
                                                       ),
                                                       style: FlutterFlowTheme
                                                               .of(context)
@@ -585,7 +582,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                             Text(
                                               FFLocalizations.of(context)
                                                   .getText(
-                                                'a2uw4pig' /* Hello World */,
+                                                'cwxfhk5e' /* Hello World */,
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -604,7 +601,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'zepax1ir' /* Hello World */,
+                                                    'f47xwlzn' /* Hello World */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)
@@ -624,7 +621,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                   child: Text(
                                                     FFLocalizations.of(context)
                                                         .getText(
-                                                      'y6ywbpvj' /* MMMEd */,
+                                                      'ioefgtvs' /* MMMEd */,
                                                     ),
                                                     style: FlutterFlowTheme.of(
                                                             context)
@@ -640,7 +637,7 @@ class _WorkOrderManagementWidgetState extends State<WorkOrderManagementWidget>
                                                 Text(
                                                   FFLocalizations.of(context)
                                                       .getText(
-                                                    'jgpz8obl' /* jm */,
+                                                    '1qknhwfx' /* jm */,
                                                   ),
                                                   style: FlutterFlowTheme.of(
                                                           context)

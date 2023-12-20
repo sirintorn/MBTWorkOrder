@@ -100,7 +100,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         body: Align(
-          alignment: const AlignmentDirectional(0.00, -1.00),
+          alignment: const AlignmentDirectional(0.0, -1.0),
           child: Container(
             width: double.infinity,
             constraints: const BoxConstraints(
@@ -155,7 +155,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                             animationsMap['containerOnPageLoadAnimation']!),
                       ),
                       Align(
-                        alignment: const AlignmentDirectional(-1.00, 1.00),
+                        alignment: const AlignmentDirectional(-1.0, 1.0),
                         child: Padding(
                           padding: const EdgeInsetsDirectional.fromSTEB(
                               24.0, 0.0, 0.0, 0.0),
@@ -171,8 +171,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                               ),
                             ),
                             child: Padding(
-                              padding: const EdgeInsetsDirectional.fromSTEB(
-                                  4.0, 4.0, 4.0, 4.0),
+                              padding: const EdgeInsets.all(4.0),
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(50.0),
                                 child: CachedNetworkImage(
@@ -253,8 +252,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                         ),
                       ),
                       child: Padding(
-                        padding: const EdgeInsetsDirectional.fromSTEB(
-                            12.0, 12.0, 12.0, 12.0),
+                        padding: const EdgeInsets.all(12.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           children: [
@@ -275,7 +273,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                             ),
                             Expanded(
                               child: Align(
-                                alignment: const AlignmentDirectional(0.90, 0.00),
+                                alignment: const AlignmentDirectional(0.9, 0.0),
                                 child: Icon(
                                   Icons.arrow_forward_ios,
                                   color: FlutterFlowTheme.of(context)
@@ -322,8 +320,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                       ),
                     ),
                     child: Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
-                          12.0, 12.0, 12.0, 12.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -344,7 +341,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                           ),
                           Expanded(
                             child: Align(
-                              alignment: const AlignmentDirectional(0.90, 0.00),
+                              alignment: const AlignmentDirectional(0.9, 0.0),
                               child: Icon(
                                 Icons.arrow_forward_ios,
                                 color:
@@ -381,8 +378,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                       ),
                     ),
                     child: Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
-                          12.0, 12.0, 12.0, 12.0),
+                      padding: const EdgeInsets.all(12.0),
                       child: Row(
                         mainAxisSize: MainAxisSize.max,
                         children: [
@@ -403,7 +399,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                           ),
                           Expanded(
                             child: Align(
-                              alignment: const AlignmentDirectional(0.90, 0.00),
+                              alignment: const AlignmentDirectional(0.9, 0.0),
                               child: Icon(
                                 Icons.arrow_forward_ios,
                                 color:
@@ -418,7 +414,7 @@ class _UserProfileWidgetState extends State<UserProfileWidget>
                   ),
                 ),
                 Align(
-                  alignment: const AlignmentDirectional(0.00, 0.00),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Padding(
                     padding:
                         const EdgeInsetsDirectional.fromSTEB(0.0, 16.0, 0.0, 0.0),

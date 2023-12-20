@@ -111,7 +111,7 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
               end: const AlignmentDirectional(-0.87, 1.0),
             ),
           ),
-          alignment: const AlignmentDirectional(0.00, -1.00),
+          alignment: const AlignmentDirectional(0.0, -1.0),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             children: [
@@ -129,7 +129,7 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16.0),
                         ),
-                        alignment: const AlignmentDirectional(0.00, 0.00),
+                        alignment: const AlignmentDirectional(0.0, 0.0),
                         child: Row(
                           mainAxisSize: MainAxisSize.max,
                           mainAxisAlignment: MainAxisAlignment.center,
@@ -157,8 +157,7 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsetsDirectional.fromSTEB(
-                          16.0, 16.0, 16.0, 16.0),
+                      padding: const EdgeInsets.all(16.0),
                       child: Container(
                         width: double.infinity,
                         constraints: const BoxConstraints(
@@ -177,10 +176,9 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                           borderRadius: BorderRadius.circular(12.0),
                         ),
                         child: Align(
-                          alignment: const AlignmentDirectional(0.00, 0.00),
+                          alignment: const AlignmentDirectional(0.0, 0.0),
                           child: Padding(
-                            padding: const EdgeInsetsDirectional.fromSTEB(
-                                32.0, 32.0, 32.0, 32.0),
+                            padding: const EdgeInsets.all(32.0),
                             child: Column(
                               mainAxisSize: MainAxisSize.max,
                               crossAxisAlignment: CrossAxisAlignment.start,
@@ -392,7 +390,7 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
                                   ),
                                 ),
                                 Align(
-                                  alignment: const AlignmentDirectional(0.00, 0.00),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         16.0, 0.0, 16.0, 24.0),
@@ -409,7 +407,7 @@ class _CreateUserWidgetState extends State<CreateUserWidget>
 
                                 // You will have to add an action on this rich text to go to your login page.
                                 Align(
-                                  alignment: const AlignmentDirectional(0.00, 0.00),
+                                  alignment: const AlignmentDirectional(0.0, 0.0),
                                   child: Padding(
                                     padding: const EdgeInsetsDirectional.fromSTEB(
                                         0.0, 12.0, 0.0, 12.0),
